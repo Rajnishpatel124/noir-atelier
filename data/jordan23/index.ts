@@ -1,7 +1,4 @@
-/**
- * Jordan23 — all narrative content.
- * Pure data. No JSX. Typed against types/jordan23.ts.
- */
+
 
 import type {
   LoaderContent,
