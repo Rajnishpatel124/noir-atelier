@@ -1,33 +1,6 @@
 'use client';
 
-/**
- * FloatingPortrait
- *
- * Isolated, reusable portrait component for editorial hero sections.
- *
- * Behaviour
- * ─────────
- * Default  : Grayscale image with a gentle idle float (vertical + slight
- *            horizontal drift running on independent periods so the motion
- *            never feels mechanical).
- *
- * Hover    : Dual-tone image crossfades in over ~500 ms. Layer 1 fades out,
- *            Layer 2 fades in — no layout shift, no flash.
- *
- * Depth    : Cursor position inside the image drives a spring-smoothed
- *            translateX / translateY (max ±13 px / ±10 px). Pointer tracking
- *            is scoped to the image boundary; springs snap back on leave.
- *
- * GPU path : All movement uses CSS transform. will-change: transform applied
- *            only to the two motion layers that change on every frame.
- *
- * Props
- * ─────
- * defaultImage — src for the grayscale / editorial default state
- * hoverImage   — src for the dual-tone hover state
- * alt          — accessible label (only applied to the visible layer)
- * className    — forwarded to the root element for size / position overrides
- */
+
 
 import { useRef, useState, useCallback } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
