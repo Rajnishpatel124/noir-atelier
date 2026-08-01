@@ -1,7 +1,7 @@
 import { ANIMATION } from '@/lib/theme';
 
 export const PRESETS = {
-  /* ── Entrance ── */
+
   fadeInUp: {
     opacity: 0,
     y: 50,
@@ -20,7 +20,7 @@ export const PRESETS = {
     ease: 'back.out(1.4)',
   },
 
-  /* ── Text ── */
+  
   wordReveal: {
     y: '110%',
     opacity: 0,
@@ -29,7 +29,7 @@ export const PRESETS = {
     ease: ANIMATION.snap,
   },
 
-  /* ── Numbers ── */
+
   countUp: {
     duration: 2.2,
     ease: ANIMATION.easeOut,
