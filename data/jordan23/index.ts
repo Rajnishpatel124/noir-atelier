@@ -11,7 +11,7 @@ import type {
   CTAContent,
 } from '@/types/jordan23';
 
-/* ── Loader ──────────────────────────────────────────────── */
+
 export const loader: LoaderContent = {
   line1: "1998 · Game 6",
   number: "5.2",
